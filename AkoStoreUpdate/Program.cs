@@ -420,7 +420,7 @@ while (true)
                         break;
                     case '0':
                         Console.WriteLine("\nLogging out...");
-                        goto EndMenu;
+                        break;
                     default:
                         Console.WriteLine("\nInvalid option! Please select a number between 0 and 9.");
                         break;
@@ -434,7 +434,6 @@ while (true)
             Console.WriteLine("\nPress any key to continue...");
             Console.ReadKey(true);
         }
-    EndMenu:;
     }
     catch (Exception ex)
     {
