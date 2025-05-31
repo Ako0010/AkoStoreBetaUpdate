@@ -165,8 +165,8 @@ while (true)
                 }
             }
         }
-
-        while (true)
+        bool isMenuActive = true;
+        while (isMenuActive)
         {
             Console.Clear();
             Console.WriteLine("Welcome StoreApp");
@@ -420,6 +420,7 @@ while (true)
                         break;
                     case '0':
                         Console.WriteLine("\nLogging out...");
+                        isMenuActive = false;
                         break;
                     default:
                         Console.WriteLine("\nInvalid option! Please select a number between 0 and 9.");
